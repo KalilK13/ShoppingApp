@@ -17,5 +17,6 @@ class CartTest {
         cart.setSpecial(Special.MON);
         double expected = fries.getPrice() * fries.getQuantity() + hats.getQuantity() * hats.getPrice();
         double actual = cart.subTotal();
+        assertEquals(expected, actual);
     }
 }
